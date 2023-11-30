@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trab4 - SEL0456</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="page-header">
+            <h1>{{ titulo }}</h1>
+        </div>
+        <form action="/inicio" method="post">
+            <fieldset>
+                <div>
+                <table class="table table-striped table-responsive table-bordered">
+                    <thead class="thead-default">
+                        <tr>
+                            <th>Número</th>
+                            <th>Fatorial</th>
+                            <th>Fibonacci</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> {{ numero.n }} </td>
+                            <td> {{ numero.fat }}</td>
+                            <td> {{ numero.fib }}</td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary btn-repetir">Repetir</button>
+            </div>
+            </fieldset>
+  </body>
+</html>
